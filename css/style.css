@@ -326,9 +326,6 @@ nav .sub-text {
   align-items: center;
   display: flex; /* Центрируем кнопку */
   margin-top: auto;
-}
-
-.info-button-text {
   text-align: center;
   color: #282829;
   font-size: 20px;
@@ -339,6 +336,7 @@ nav .sub-text {
   letter-spacing: 0.80px;
   word-wrap: break-word;
 }
+
 
 .form{
   width: 100%;
@@ -554,9 +552,6 @@ nav .sub-text {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer .order-text {
   text-align: center;
   color: #222222;
   font-size: 1.25rem;
@@ -565,6 +560,7 @@ nav .sub-text {
   text-transform: uppercase;
   letter-spacing: 0.05rem;
 }
+
 
 .footer .menu {
   left: 37.5%;
@@ -603,4 +599,88 @@ nav .sub-text {
   height: 2vw;
   position: absolute;
   border: 2px solid #D5C9BE;
+}
+nav .menu-item {
+  position: relative; /* Устанавливаем относительное позиционирование */
+  text-decoration: none; /* Убираем стандартное подчеркивание */
+  color: white; /* Цвет текста по умолчанию */
+}
+
+nav .menu-item::after {
+  content: ""; /* Псевдоэлемент без текста */
+  display: block; /* Делаем его блочным элементом */
+  width: 0; /* Начальная ширина линии */
+  height: 2px; /* Высота линии */
+  background-color: aqua; /* Цвет линии */
+  transition: width 0.3s ease; /* Плавный переход для ширины */
+  position: absolute; /* Абсолютное позиционирование */
+  left: 50%; /* Позиционирование по горизонтали */
+  bottom: -5px; /* Расположение под текстом */
+  transform: translateX(-50%); /* Центрируем линию относительно текста */
+}
+
+nav .menu-item:hover {
+  color: aqua; /* Цвет текста при наведении */
+}
+
+nav .menu-item:hover::after {
+  width: 100%; /* Увеличиваем ширину линии при наведении */
+}
+.order-button button:hover {background-color: aqua; color: #FFFFFF;  transition: 0.1s ease;}
+.info-button:hover {background-color: aqua; color: #FFFFFF;  transition: 0.1s ease;}
+.btn:hover {background-color: green; color: #FFFFFF;  transition: 0.1s ease;}
+
+.footer .order-button:hover{background-color: aqua; color: #FFFFFF;}
+
+nav .menu-item {
+  position: relative; /* Устанавливаем относительное позиционирование */
+  text-decoration: none; /* Убираем стандартное подчеркивание */
+  color: white; /* Цвет текста по умолчанию */
+}
+nav .menu-item::after {
+  content: ""; /* Псевдоэлемент без текста */
+  display: block; /* Делаем его блочным элементом */
+  width: 0; /* Начальная ширина линии */
+  height: 2px; /* Высота линии */
+  background-color: aqua; /* Цвет линии */
+  transition: width 0.3s ease; /* Плавный переход для ширины */
+  position: absolute; /* Абсолютное позиционирование */
+  left: 50%; /* Позиционирование по горизонтали */
+  bottom: -5px; /* Расположение под текстом */
+  transform: translateX(-50%); /* Центрируем линию относительно текста */
+}
+
+nav .menu-item:hover {
+  color: aqua; /* Цвет текста при наведении */
+}
+
+nav .menu-item:hover::after {
+  width: 100%; /* Увеличиваем ширину линии при наведении */
+}
+
+nav .sub-text {
+  position: relative; /* Устанавливаем относительное позиционирование */
+  text-decoration: none; /* Убираем стандартное подчеркивание */
+  color: white; /* Цвет текста по умолчанию */
+}
+
+nav .sub-text::after {
+  content: ""; /* Псевдоэлемент без текста */
+  display: block; /* Делаем его блочным элементом */
+  width: 0; /* Начальная ширина линии */
+  height: 2px; /* Высота линии */
+  background-color: aqua; /* Цвет линии */
+  transition: width 0.3s ease; /* Плавный переход для ширины */
+  position: absolute; /* Абсолютное позиционирование */
+  left: 50%; /* Позиционирование по горизонтали */
+  bottom: -5px; /* Расположение под текстом */
+  transform: translateX(-50%); /* Центрируем линию относительно текста */
+}
+
+nav .sub-text:hover {
+  color: aqua; /* Цвет текста при наведении */
+}
+
+nav .sub-text:hover::after {
+  width: 100%; /* Увеличиваем ширину линии при наведении */
 }
