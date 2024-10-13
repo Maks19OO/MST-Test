@@ -1344,13 +1344,66 @@
       top:50%;
       left: 70%;
     }
-    @media (max-width:380px) {
-      .icons-container{
-        left: 0%;
-      }
+  }
+  @media (max-width:380px) {
+    .icons-container{
+      left: 0%;
     }
   }
-  
+  @media (max-width:320px) {
+    .content{
+      margin-top: 15px;
+    }
+
+    .large-text{
+      font-size: 15px;
+    }
+
+    .small-text{
+      font-size: 15px;
+    }
+    main{
+      height: 80vh;
+    }
+    nav .sub-text{
+      font-size: 12.9px;
+    }
+
+    .footer .menu{
+      left:2.5%
+    }
+
+    .footer .icons-container{
+      margin-top: 16%;
+      width: 100%;
+      justify-content: center;
+      margin-left: -100px;
+    }
+    .footer .copyright{
+      left:-1%;
+      font-size: 12px;
+    }
+    .footer .privacy-policy{
+      font-size: 12px;
+      left: 40%;
+    }
+    .footer .terms-of-use{
+      font-size: 12px;
+      white-space: nowrap;
+      left: 74%;
+      top: 76%;
+    }
+
+
+    .form{
+      height: 70vh;
+    }
+
+    .info{
+      height: 110vh;
+    }
+
+  }
 
 
 
