@@ -919,7 +919,13 @@
     width: 100%;
   }
 
-  
+  main{
+    height: 60vh;
+  }
+
+  .info-details{
+    height: 40vh;
+  }
 
   .footer {
     width: 100%;
