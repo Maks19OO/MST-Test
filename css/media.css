@@ -1330,8 +1330,16 @@
     }
 
     .icons-container{
-      margin-top:15%;
+      margin-top:10%;
       left: 5%;
+    }
+
+    .footer .order-button{
+      left: 10%;
+      height: 5%;
+      width: 30%;
+      top:50%;
+      left: 70%;
     }
 
   }
